@@ -1,5 +1,5 @@
 <template>
-    <div class="text-xl font-semibold text-gray-700 mb-4">
+    <div class="text-xl font-semibold text-secondary mb-4">
       {{ formatDate() }}
     </div>
 </template>

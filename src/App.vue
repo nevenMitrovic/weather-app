@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center p-6 min-h-screen bg-gray-100">
+  <div class="flex flex-col items-center p-6 min-h-screen bg-background">
     <!-- Date Display -->
     <DateDisplay />
 
