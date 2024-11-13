@@ -12,7 +12,7 @@
       v-if="search.results?.length > 0 && search.results != null"
     >
       <div v-for="suggestion in search.results" :key="suggestion.id">
-        <button class="w-full text-left hover:text-secondary">
+        <button @click="getWeather(suggestion.id)" class="w-full text-left hover:text-secondary">
           {{ suggestion.name }}, {{ suggestion.region }}, {{ suggestion.country }}
         </button>
       </div>
@@ -23,6 +23,8 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 import type { SearchType } from '@/types/index'
+
+const emit = defineEmits(['place-data'])
 
 const search = reactive<SearchType>({
   query: '',
@@ -48,6 +50,21 @@ const handleSearch = () => {
     }, 500)
   } else {
     search.results = null
+  }
+}
+
+const getWeather = async (id: number) => {
+  try {
+    const res = await fetch(
+      `http://api.weatherapi.com/v1/forecast.json?key=40c5956ff1da43adb10142231241311&q=id:${id}&days=1&aqi=no&alerts=no`,
+    )
+    const data = await res.json()
+    emit('place-data', data)
+    search.query = ''
+    search.results = null
+  } catch (error) {
+    console.error(error)
+    throw error
   }
 }
 </script>

@@ -5,7 +5,7 @@ export interface SearchType {
 }
 
 export interface AutocompleteResponse {
-  id: string | number
+  id: number
   name: string
   region: string
   country: string

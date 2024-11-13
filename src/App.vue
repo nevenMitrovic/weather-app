@@ -3,7 +3,7 @@
     <DateDisplay />
 
     <!-- Search Bar -->
-    <SearchBar />
+    <SearchBar @place-data="handlePlaceData" />
 
     <!-- Weather Card -->
     <div
@@ -47,6 +47,12 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import DateDisplay from '@/components/DateDisplay.vue'
 import SearchBar from '@/components/SearchBar.vue'
+
+const placeData = ref([])
+const handlePlaceData = (data) => {
+  placeData.value.push(data)
+}
 </script>
