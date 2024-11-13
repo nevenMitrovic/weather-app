@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Jaldi';
+  src:
+    url('@/assets/font/Jaldi-Regular.ttf') format('woff2'),
+    url('@/assets/font/Jaldi-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply font-custom;
+}
