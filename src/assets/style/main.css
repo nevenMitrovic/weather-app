@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Jaldi';
+  font-family: 'Poppins';
   src:
-    url('@/assets/font/Jaldi-Regular.ttf') format('woff2'),
-    url('@/assets/font/Jaldi-Bold.ttf') format('woff');
+    url('@/assets/font/Poppins-Regular.ttf') format('woff2'),
+    url('@/assets/font/Poppins-Bold.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }
