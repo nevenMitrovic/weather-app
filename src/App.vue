@@ -1,9 +1,7 @@
 <template>
   <div class="flex flex-col items-center p-6 min-h-screen bg-gray-100">
     <!-- Date Display -->
-    <div class="text-xl font-semibold text-gray-700 mb-4">
-      Saturday, November 18, 2023
-    </div>
+    <DateDisplay />
 
     <!-- Search Bar -->
     <div class="w-full max-w-md mb-6">
@@ -55,4 +53,5 @@
 </template>
 
 <script setup lang="ts">
+import DateDisplay from "@/components/DateDisplay.vue";
 </script>
