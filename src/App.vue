@@ -1,20 +1,14 @@
 <template>
   <div class="flex flex-col items-center p-6 min-h-screen bg-background">
-    <!-- Date Display -->
     <DateDisplay />
 
     <!-- Search Bar -->
-    <div class="w-full max-w-md mb-6">
-      <input
-        v-model="search"
-        type="text"
-        placeholder="Search city..."
-        class="w-full px-4 py-2 border-2 border-purple-500 rounded-full focus:outline-none focus:border-purple-700 transition-colors"
-      />
-    </div>
+    <SearchBar />
 
     <!-- Weather Card -->
-    <div class="bg-gradient-to-b from-purple-800 to-purple-900 text-white p-6 rounded-xl shadow-lg w-full max-w-sm">
+    <div
+      class="bg-gradient-to-b from-purple-800 to-purple-900 text-white p-6 rounded-xl shadow-lg w-full max-w-sm"
+    >
       <div class="flex justify-between items-center mb-4">
         <div class="text-lg font-medium">London</div>
         <div class="text-sm">1:46</div>
@@ -53,5 +47,6 @@
 </template>
 
 <script setup lang="ts">
-import DateDisplay from "@/components/DateDisplay.vue";
+import DateDisplay from '@/components/DateDisplay.vue'
+import SearchBar from '@/components/SearchBar.vue'
 </script>
