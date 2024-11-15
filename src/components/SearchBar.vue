@@ -56,7 +56,7 @@ const handleSearch = () => {
 const getWeather = async (id: number) => {
   try {
     const res = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=40c5956ff1da43adb10142231241311&q=id:${id}&days=1&aqi=no&alerts=no`,
+      `http://api.weatherapi.com/v1/forecast.json?key=40c5956ff1da43adb10142231241311&q=id:${id}&days=3&aqi=no&alerts=no`,
     )
     const data = await res.json()
     emit('place-data', data)
