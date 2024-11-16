@@ -23,6 +23,9 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 import type { SearchType } from '@/types/index'
+import { usePlaceStore } from '../stores/place'
+
+const placeStore = usePlaceStore()
 
 const emit = defineEmits(['place-data'])
 
@@ -62,6 +65,7 @@ const getWeather = async (id: number) => {
     emit('place-data', data)
     search.query = ''
     search.results = null
+    placeStore.addPlace(data)
   } catch (error) {
     console.error(error)
     throw error
