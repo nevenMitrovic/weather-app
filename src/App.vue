@@ -6,8 +6,10 @@
     <SearchBar @place-data="handlePlaceData" />
 
     <!-- Weather Card -->
-    <div v-for="(place, index) in placeData" :key="index">
-      <WeatherCard :place="place" />
+    <div class="flex flex-row flex-wrap gap-2 max-w-[1100px]">
+      <div v-for="(place, index) in placeData" :key="index">
+        <WeatherCard :place="place" />
+      </div>
     </div>
   </div>
 </template>

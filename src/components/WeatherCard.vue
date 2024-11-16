@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-gradient-to-b from-primary to-secondary text-white p-6 rounded-xl shadow-lg w-full max-w-sm"
+    class="relative bg-gradient-to-b from-primary to-secondary text-white p-6 rounded-xl shadow-lg w-[350px]"
   >
     <div class="flex justify-between items-center mb-4">
       <div class="text-lg font-medium">{{ place.location.name }}</div>
