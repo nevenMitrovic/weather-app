@@ -10,32 +10,52 @@
       <span class="text-lg font-semibold">×</span>
     </button>
     <div class="space-y-2 text-gray-900">
-      <div class="flex flex-col items-center gap-1">
-        <div class="w-[20px]">
-          <img src="@/assets/img/wind.png" alt="wind_icons" width="w-[20px]" />
+      <div class="flex items-center justify-between gap-2 py-4 text-sm text-center">
+        <div class="w-1/3 flex flex-col items-center justify-center gap-1">
+          <div class="w-[20px]">
+            <img src="@/assets/img/wind.png" alt="wind_icons" />
+          </div>
+          <div class="font-bold">{{ place.current.wind_kph }} km/h</div>
+          <div class="opacity-80 text-xs">wind</div>
         </div>
-        <div class="font-bold">{{ place.current.wind_kph }} km/h</div>
-        <div class="opacity-80">wind</div>
+        <div class="w-1/3 flex flex-col items-center justify-center gap-1">
+          <div class="w-[20px]">
+            <img src="@/assets/img/humidity.png" alt="wind_icons" />
+          </div>
+          <div class="font-bold">{{ place.current.humidity }}%</div>
+          <div class="opacity-80 text-xs">humidity</div>
+        </div>
+        <div class="w-1/3 flex flex-col items-center justify-center gap-1">
+          <div class="w-[20px]">
+            <img src="@/assets/img/precipitation.png" alt="wind_icons" />
+          </div>
+          <div class="font-bold">{{ place.current.precip_mm }} mm</div>
+          <div class="opacity-80 text-xs">precipitation</div>
+        </div>
       </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-4 h-4 bg-gray-500 rounded-full"></span>
-        <span>93% humidity</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-4 h-4 bg-gray-500 rounded-full"></span>
-        <span>0.59 mm precipitation</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-4 h-4 bg-gray-500 rounded-full"></span>
-        <span>SE direction</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-4 h-4 bg-gray-500 rounded-full"></span>
-        <span>Feels 6</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <span class="w-4 h-4 bg-gray-500 rounded-full"></span>
-        <span>UV index 1</span>
+
+      <div class="flex items-center justify-between gap-2 py-4">
+        <div class="w-1/3 flex flex-col items-center justify-center gap-1">
+          <div class="w-[20px]">
+            <img src="@/assets/img/wind-direction.png" alt="wind_icons" />
+          </div>
+          <div class="font-bold">{{ place.current.wind_dir }}</div>
+          <div class="opacity-80 text-xs">direction</div>
+        </div>
+        <div class="w-1/3 flex flex-col items-center justify-center gap-1">
+          <div class="w-[20px]">
+            <img src="@/assets/img/thermometer.png" alt="wind_icons" />
+          </div>
+          <div class="font-bold">{{ place.current.feelslike_c }}&deg;</div>
+          <div class="opacity-80 text-xs">Feels</div>
+        </div>
+        <div class="w-1/3 flex flex-col items-center justify-center gap-1">
+          <div class="w-[20px]">
+            <img src="@/assets/img/sun.png" alt="wind_icons" />
+          </div>
+          <div class="font-bold">{{ place.current.uv }}</div>
+          <div class="opacity-80 text-xs">UV index</div>
+        </div>
       </div>
     </div>
   </div>
