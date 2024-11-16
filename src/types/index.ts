@@ -13,3 +13,9 @@ export interface AutocompleteResponse {
   lon: number
   url: string
 }
+
+export interface WeatherInfoData {
+  value: string
+  img: string
+  label: string
+}

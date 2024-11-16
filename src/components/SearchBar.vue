@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 import type { SearchType } from '@/types/index'
-import { usePlaceStore } from '../stores/place'
+import { usePlaceStore } from '../stores/index'
 
 const placeStore = usePlaceStore()
 
