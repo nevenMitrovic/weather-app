@@ -41,7 +41,7 @@ const handleSearch = () => {
     search.lazyLoad = setTimeout(async () => {
       try {
         const res = await fetch(
-          `http://api.weatherapi.com/v1/search.json?key=40c5956ff1da43adb10142231241311&q=${search.query}`,
+          `https://api.weatherapi.com/v1/search.json?key=40c5956ff1da43adb10142231241311&q=${search.query}`,
         )
         const data = await res.json()
         search.results = data
@@ -59,7 +59,7 @@ const handleSearch = () => {
 const getWeather = async (id: number) => {
   try {
     const res = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=40c5956ff1da43adb10142231241311&q=id:${id}&days=3&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=40c5956ff1da43adb10142231241311&q=id:${id}&days=3&aqi=no&alerts=no`,
     )
     const data = await res.json()
     emit('place-data', data)
