@@ -15,7 +15,7 @@ A modern, responsive weather application built with **Vue.js**. The app allows u
 
 ## Website
 
-- **https://weather-app-neven.netlify.app/**
+- https://weather-app-neven.netlify.app/
 
 ---
 
