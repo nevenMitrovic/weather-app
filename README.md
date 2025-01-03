@@ -1,39 +1,29 @@
-# weather-app
+# Weather App
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern, responsive weather application built with **Vue.js**. The app allows users to search for a city and get real-time weather updates, including temperature, humidity, wind speed, and a brief weather description.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Type Support for `.vue` Imports in TS
+- **Search for Current Weather** by city name.
+- Displays **temperature, humidity, wind speed**, and a weather description.
+- **Responsive Design**: Optimized for all devices.
+- Fetches real-time data using the **Weather API**.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## Website
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **https://weather-app-neven.netlify.app/**
 
-## Project Setup
+---
 
-```sh
-npm install
-```
+## Tech Stack
 
-### Compile and Hot-Reload for Development
+- **Vue.js**: Frontend Framework
+- **TypeScript**: Provides static typing to enhance code reliability and maintainability
+- **Tailwind CSS**: For styling
+- **Weather API**: For real-time weather data
 
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+---
